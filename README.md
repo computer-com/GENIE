@@ -23,7 +23,7 @@ This project is an AI-powered content generator application built using Next.js,
 
 ## Configuration
 
-Create a `.env.local` file with necessary environment variables (e.g., database URL, Clerk keys, Gemini API key).
+Create a `.env` file with necessary environment variables (e.g., database URL, Clerk keys, Gemini API key).
 
 ## Running the Application
 
