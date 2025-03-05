@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { DollarSign, FileClock, History, Home, Icon, Settings } from 'lucide-react'
 import path from 'path'
 import { usePathname } from 'next/navigation'
+import UsageTrack from './UsageTrack'
 
 function SideNav() {
     const MenuList = [
@@ -33,7 +34,7 @@ function SideNav() {
         console.log(path); 
     })
     return (
-        <div className='h-screen p-5 shadow-lg border-r bg-gradient-to-b from-gray-100 to-gray-300'>
+        <div className='h-screen relative p-5 shadow-lg border-r bg-gradient-to-b from-gray-100 to-gray-300'>
             <div className='flex justify-center border-b pb-4'>
                 <Image src={'/logo.svg'} alt="Logo" width={120} height={100} />
             </div>
@@ -45,6 +46,9 @@ function SideNav() {
                         <h2 className='text-lg font-medium'>{menu.name}</h2>
                     </div>
                 ))}
+            </div>
+            <div className='absolute bottom-20 left-0 w-full'>
+                <UsageTrack/>
             </div>
         </div>
     )
