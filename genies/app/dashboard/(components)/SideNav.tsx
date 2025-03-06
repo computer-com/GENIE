@@ -41,7 +41,7 @@ function SideNav() {
             <hr className='my-6 border-t border-gray-300' />
             <div className='mt-3'>
                 {MenuList.map((menu, index) => (
-                    <div key={index} className={`flex gap-3 mb-3 p-3 hover:bg-blue-500 hover:text-white rounded-lg cursor-pointer items-center transition-colors duration-200 ${path === menu.path ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'}`}>
+                    <div key={index} className={`flex gap-3 mb-3 p-3 bg-primary hover:bg-primary hover:text-white rounded-lg cursor-pointer items-center transition-colors duration-200 ${path === menu.path ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'}`}>
                         <menu.icon className='h-7 w-7' />
                         <h2 className='text-lg font-medium'>{menu.name}</h2>
                     </div>

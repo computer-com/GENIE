@@ -1,6 +1,5 @@
 import React from 'react'
 import SideNav from './(components)/SideNav'
-import Header from './(components)/Header'
 
 function layout({  children,
 }: Readonly<{
@@ -12,7 +11,6 @@ function layout({  children,
         <SideNav />
       </div>
       <div className='flex-1 md:ml-64 p-4'>
-        <Header />
         {children}
       </div>
     </div>

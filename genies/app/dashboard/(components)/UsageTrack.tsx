@@ -3,8 +3,7 @@ import { currentUser } from '@clerk/nextjs/server'
 import React from 'react'
 
 function UsageTrack() {
-    const { user} = currentUser();
-    const result = await
+
   return (
     <div className='m-5'>
       <div className='bg-primary text-white rounded-lg p-3'>
